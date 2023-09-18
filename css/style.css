@@ -72,6 +72,17 @@ h6{
 .pb-100{
     padding-bottom: 100px;
 }
+.read-more{
+    color: #7b68ee;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    -webkit-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    margin-top: 15px;
+}
+
 /*================= header section ================*/
 ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
     margin: auto;
@@ -176,23 +187,23 @@ button.navbar-toggler {
     position: absolute;
     bottom: -1px;
     z-index: 1;
-}
-.hero-area .service-btn{
+} 
+.service-btn{
     background-color: #fff;
     color: #3e57d0;
     margin-right: 20px;
     transition: all .4s;
 }
-.hero-area .service-btn:hover{
+.service-btn:hover{
     color: #fff;
     background-color: #3e57d0;
 }
-.hero-area .contact-btn{
+.contact-btn{
     background-color: #7b68ee;
     color: #fff;
     transition: all .4s;
 }
-.hero-area .contact-btn:hover{
+.contact-btn:hover{
     color: #3e57d0;
     background-color: #fff;
 }
@@ -249,16 +260,7 @@ button.navbar-toggler {
     font-weight: 400;
     line-height: 1.8;
     letter-spacing: 0.2px;    
-}
-.services-item .read-more{
-    color: #7b68ee;
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    -webkit-transition: all 400ms ease-out;
-    transition: all 400ms ease-out;
-}
+} 
 .read-more span{
     color: #7b68ee;
     font-size: 24px;
@@ -403,7 +405,7 @@ button.navbar-toggler {
     z-index: 1;
     color: #fff;
     text-align: center;
-    background-image: url(/images/counter-banner.jpg);
+    background-image: url(/images/background-imagessss.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -511,7 +513,7 @@ button.navbar-toggler {
 }
 .single-image img{
     width: 100%;
-    height: 295px;
+    height: 100%;
     transition: all .4s ease-in-out;
     object-fit: cover;
 }
@@ -560,3 +562,118 @@ button.navbar-toggler {
     color: #5764ec;
     margin-bottom: 5px;
 }
+
+
+/*================ blog section =================*/
+.blog-wrapper{
+    background: #f7f8f8;
+}
+.blog-item{
+    background: #fff;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+.blog-image img {
+    max-width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.blog-details {
+    padding: 20px 25px;
+}
+.blog-info{
+    display: flex;
+    align-items: center;
+}
+.blog-info i{
+    color: #7b68ee;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 3px;
+    
+}
+.blog-info a{
+    color: #555;
+    margin-right: 15px;
+}
+
+.blog-text h3{
+    color: #404040;
+    font-size: 20px;
+    line-height: 32px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    margin: 10px 0px 10px 0px;
+}
+.blog-text h3 a{
+    color: #404040;
+}
+.blog-text h3 a:hover{
+    color: #7b68ee;
+}
+.blog-text p{
+    margin: 0;
+}
+
+
+/*================= hir section =================*/
+.hire-wrapper{
+    position: relative;
+    padding: 70px 0;
+    background-image: url(/images/background-imagessss.png);
+    font-family: 'Dosis', sans-serif;
+}
+.hire-wrapper::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #03030c;
+    z-index: 1;
+    opacity: .6;
+
+}
+.hire-content{
+    position: relative;
+    z-index: 555;
+}
+.hire-content h2{
+    color: #fff;
+    font-size: 38px;
+    margin: 0;
+}
+.hire-content p{
+    color: #fff;
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.hire-wrapper .contact-btn{
+    background-color: #7b68ee;
+    color: #fff;
+    margin-right: 20px;
+    transition: all .4s;
+}
+.hire-wrapper .contact-btn:hover{
+    color: #fff;
+    background: #3e57d0;
+}
+
+
+.hire-wrapper .service-btn{
+    background-color: #fff;
+    color: #7b68ee;
+    margin-right: 20px;
+    transition: all .4s;
+}
+.hire-wrapper .service-btn:hover{
+    color: #fff;
+    background-color: #3e57d0;
+}
+
