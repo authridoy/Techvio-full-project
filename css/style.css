@@ -485,3 +485,78 @@ button.navbar-toggler {
     display: block;
 }
 
+
+/*============== team section ==============*/
+
+.single-team-box{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 7px;
+    background: rgb(233, 230, 230);
+    margin-top: 16px;
+}
+.single-team-box:hover img{
+    transform: scale(1.2);
+}
+.single-team-box:hover i{
+    opacity: 1;
+    transform: scale(1.5);
+}
+.single-team-box:hover .team-social-icon::before{
+    opacity: .5;
+}
+.single-image{
+    position: relative;
+    overflow: hidden;
+}
+.single-image img{
+    width: 100%;
+    height: 295px;
+    transition: all .4s ease-in-out;
+    object-fit: cover;
+}
+.team-social-icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: all .4s ease-in-out;
+    /* backdrop-filter: blur(2px); */
+}
+.team-social-icon::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: block;
+    transition: all .4 ease-in-out;
+    opacity: 0;
+}
+.team-social-icon i{
+    font-size: 13px;
+    color: #fff;
+    margin: 15px;
+    transition: all .4s ease-in-out;
+    opacity: 0;
+}
+.team-info h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+.team-info{
+    padding: 20px 0 15px 0;
+}
+.team-info span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #5764ec;
+    margin-bottom: 5px;
+}
